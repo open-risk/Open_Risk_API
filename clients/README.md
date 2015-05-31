@@ -9,7 +9,7 @@ modifying any of the url data.
 #### Startup the demo resource servers:
 
 - Model Server: Follow the instructions or the [model server](https://github.com/open-risk/Open_Risk_API/tree/master/model_server)  	
-- Data Server: Follow the instructions for the <a href="data server" target="_blank">data server</a>. 
+- Data Server: Follow the instructions for the [data server](https://github.com/open-risk/Open_Risk_API/tree/master/data_server). 
 
 Both servers rely on an underlying MongoDB database
 This database must be populated with a portfolio database for the demo to work (see data server documentation
