@@ -1,7 +1,7 @@
 # Open Risk API
 An API for interconnected risk models and risk data
 
-[]https://github.com/open-risk/Open_Risk_API/blob/master/Architecture.png)
+![](https://github.com/open-risk/Open_Risk_API/blob/master/Architecture.png)
 
 The Open Risk API is an open source application programming interface (API) that allows for the distributed development, deployment and use of financial risk models. The proposal targets the following key problem: how to integrate in a robust and trustworthy manner diverse risk modeling and risk data resources, contributed by multiple authors, using different technologies, and which very likely will evolve over time. 
 
