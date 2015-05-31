@@ -8,7 +8,7 @@ modifying any of the url data.
 
 #### Startup the demo resource servers:
 
-- Model Server: Follow the instructions or the <a href="model server" target="_blank">model server</a>.   	
+- Model Server: Follow the instructions or the [model server](https://github.com/open-risk/Open_Risk_API/tree/master/model_server)  	
 - Data Server: Follow the instructions for the <a href="data server" target="_blank">data server</a>. 
 
 Both servers rely on an underlying MongoDB database
