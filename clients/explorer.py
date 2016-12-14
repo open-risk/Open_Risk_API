@@ -82,8 +82,8 @@ def get_data(portfolio_url, query):
 def post_calculation_ticket(model_url, ticket):
     headers = {'Content-Type': 'application/json'}
     print(json.dumps(ticket))
-    response = requests.post(model_url, data=json.dumps(ticket),
-                             headers=headers)
+    response = requests.post(model_url, data=json.dumps(ticket), headers=headers)
+    print(response.json())
     return response
 
 

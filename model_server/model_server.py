@@ -45,7 +45,7 @@ def calculate(model_name, portfolio_url):
     for entry in portfolio_raw['_items']:
         portfolio_list.append(entry['EAD'])
     portfolio = np.array(portfolio_list)
-    weights = cl.weights(portfolio)
+    weights = cl.get_weights(portfolio)
     if model_name == 'shannon':
         value = cl.shannon(weights)
     elif model_name == 'hhi':
@@ -161,6 +161,7 @@ def calculation(model_name):
     # return an output URL
     portfolio_url = calculation_input["portfolio_url"]
     result = calculate(model_name, portfolio_url)
+    # print(result)
     # result = {"result" : 0}
     # select outputs collection
     outputs_list = db.outputs

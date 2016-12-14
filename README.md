@@ -19,4 +19,4 @@ Use the [forum](https://www.openrisk.eu/commons/forum/viewforum.php?f=20) for di
 
 ### Contributions
 
-If you want to contribute to Open Risk API please sign first the <a href="https://www.clahub.com/agreements/open-risk/OpenCPM">Contributor License Agreement</a>
+We welcome contributions to the Open Risk API in terms of ideas or code. If you want to contribute to Open Risk API please sign first the <a href="https://www.clahub.com/agreements/open-risk/OpenCPM">Contributor License Agreement</a>
