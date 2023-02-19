@@ -1,7 +1,9 @@
+# (c) 2015 - 2023 Open Risk (https://www.openriskmanagement.com)
+
 # -*- coding: utf-8 -*-
 """
 Created on Mon May  4 16:33:42 2015
-@author: OpenRisk
+@author: Open Risk
 """
 
 from eve import Eve

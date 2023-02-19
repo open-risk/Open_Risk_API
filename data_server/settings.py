@@ -1,3 +1,5 @@
+# (c) 2015 - 2023 Open Risk (https://www.openriskmanagement.com)
+
 # add dictionary schema
 # dictionaries/dictionary_name endpoint
 

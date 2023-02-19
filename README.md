@@ -14,10 +14,6 @@ A white paper with the current specification of the API is available [here](http
 We illustrate the API with an open source implementation that takes a use case from the analysis of credit risk in loan portfolios. The implementation consists of demo model / data servers and clients implemented using Python and MongoDB. 
 There are further dependencies on flask and python-eve
 
-### Chat Room 
-Use the Gitter room
-[![Gitter](https://badges.gitter.im/open-risk/API.svg)](https://gitter.im/open-risk/API?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
 ### Contributions
 
 We welcome contributions to the Open Risk API in terms of ideas or code

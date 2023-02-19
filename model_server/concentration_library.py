@@ -1,6 +1,8 @@
+# (c) 2016 - 2023 Open Risk (https://www.openriskmanagement.com)
+
 """
 Created on Fri Nov 18 14:24:07 CET 2016
-@author: openrisk
+@author: open risk
 Purpose: Concentration metrics library
 The library implements the computation of indexes of inequality and concentration. For
 each index, it provides decomposition between subgroups. Plotting of Lorenz and concentration
