@@ -7,7 +7,7 @@ The Open Risk API is an open source application programming interface (API) that
 
 The API builds on and integrates two key frameworks, Semantic Data and RESTful API's
 
-A white paper with the current specification of the API is available [here](https://www.openrisk.eu/WhitePapers)
+A white paper with the current specification of the API is available [here](https://www.openriskmanagement.com/wp-content/uploads/2016/02/OpenRiskWP03_053115.pdf)
 
 # Demo Implementation
 
