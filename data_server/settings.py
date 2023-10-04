@@ -37,7 +37,7 @@ obligors = {
     'additional_lookup': {
         'url': 'regex("[\w]+")',
         'field': 'id'
-        },
+    },
 
     # We choose to override global cache-control directives for this resource.
     'cache_control': 'max-age=10,must-revalidate',

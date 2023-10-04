@@ -8,9 +8,9 @@ Version: 0.1
 This client emulates a typical user path exploring the API
 """
 
-import requests
 import json
 
+import requests
 from rdflib import Graph, Namespace, RDF
 
 # The entry point for the model server (assumed known)
@@ -20,7 +20,6 @@ ENTRY_POINT = "http://127.0.0.1:" + str(PORT)
 
 
 def get_data_dictionaries():
-
     # TODO get dictionaries for data fields
     return
 

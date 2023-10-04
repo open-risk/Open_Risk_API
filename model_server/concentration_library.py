@@ -87,7 +87,7 @@ def hk(vector, a):
             return np.exp(h)
         else:
             h1 = np.power(weights, a).sum()
-            h2 = np.power(h1, 1.0/(a-1.0))
+            h2 = np.power(h1, 1.0 / (a - 1.0))
             return h2
 
 
@@ -102,8 +102,8 @@ def gini(vector):
     if n == 0:
         return 0
     else:
-        i = np.arange(1, n+1)
-        return (1.0 - 2.0 * np.multiply(i, weights).sum())/n + 1.0
+        i = np.arange(1, n + 1)
+        return (1.0 - 2.0 * np.multiply(i, weights).sum()) / n + 1.0
 
 
 def shannon(vector):
@@ -144,7 +144,7 @@ def atkinson(vector, epsilon):
         else:
             n2 = np.power(n, epsilon / (epsilon - 1.0))
             h1 = np.power(weights, 1.0 - epsilon).sum()
-            h2 = np.power(h1, 1.0/(1.0 - epsilon))
+            h2 = np.power(h1, 1.0 / (1.0 - epsilon))
             return 1 - n2 * h2
 
 

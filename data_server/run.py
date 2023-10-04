@@ -7,6 +7,7 @@ Created on Mon May  4 16:33:42 2015
 """
 
 from eve import Eve
+
 app = Eve(settings="settings.py")
 
 if __name__ == '__main__':

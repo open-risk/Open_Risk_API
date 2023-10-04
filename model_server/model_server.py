@@ -10,20 +10,17 @@ Implements model service point
 - performs calculations
 """
 
-
-from flask import Flask, request
 import json
-import requests
 
 import numpy as np
-import concentration_library as cl
-
+import requests
+from bson.objectid import ObjectId
+from flask import Flask, request
+from pymongo import MongoClient
 from rdflib import Literal, Graph, Namespace, RDF, URIRef
 from rdflib.namespace import DC, FOAF
 
-from pymongo import MongoClient
-from bson.objectid import ObjectId
-
+import concentration_library as cl
 
 PORT = 5012
 ENTRY_POINT = "http://127.0.0.1:" + str(PORT)
@@ -57,7 +54,6 @@ def calculate(model_name, portfolio_url):
 @app.route('/', methods=['GET'])
 @app.route('/models', methods=['GET'])
 def return_models_list():
-
     # currently we have an in memory description of the models list
     # in production this will be a dynamically updated rdf/jsonld triplestore
 
@@ -95,7 +91,6 @@ def return_models_list():
 
 @app.route('/models/<model_name>', methods=['GET'])
 def return_model_description(model_name):
-
     # return an in memory description of model
 
     ns = Namespace("http://openriskplatform.org/ns/doam#")
@@ -140,7 +135,6 @@ def return_model_description(model_name):
 
 @app.route('/models/<model_name>', methods=['POST'])
 def calculation(model_name):
-
     # build input ticket
     calculation_input = request.json
     # to add request timestamp
@@ -174,13 +168,12 @@ def calculation(model_name):
     calculation_output = {}
     calculation_output["user_id"] = calculation_input["user_id"]
     calculation_output["output_url"] = calculation_input["model_url"] + "/" \
-        + str(output_id)
+                                       + str(output_id)
     return json.dumps(calculation_output)
 
 
 @app.route('/models/<model_name>/<calc_id>', methods=['GET'])
 def display_results(model_name, calc_id):
-
     # print(model_name, calc_id)
     # connection to local storage (MongoDB instance)
     client = MongoClient('mongodb://localhost:27017/')
@@ -196,6 +189,7 @@ def display_results(model_name, calc_id):
     for doc in cursor:
         result = doc["result"]
     return json.dumps(result)
+
 
 if __name__ == '__main__':
     app.run(port=PORT, debug=True)
