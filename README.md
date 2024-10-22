@@ -12,6 +12,7 @@ A white paper with the current specification of the API is available [here](http
 # Demo Implementation
 
 We illustrate the API with an open source implementation that takes a use case from the analysis of credit risk in loan portfolios. The implementation consists of demo model / data servers and clients implemented using Python and MongoDB. 
+
 There are further dependencies on flask and python-eve
 
 ### Contributions

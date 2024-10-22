@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY doam "http://www.openriskplatform.org/ns/doam#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://www.openriskplatform.org/ns/doam#"
+     xml:base="http://www.openriskplatform.org/ns/doam"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:doam="http://www.openriskplatform.org/ns/doam#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <owl:NamedIndividual rdf:about="&doam;Shannon_Index">
+        <rdf:type rdf:resource="&doam;RiskModel"/>
+        <name rdf:datatype="&xsd;string">Shannon Index</name>
+        <description rdf:datatype="&xsd;string">Calculation of the Shannon Index</description>
+	<serviceEndPoint rdf:datatype="&xsd;anyURI">http://localhost:8080/models/Shannon_Index</serviceEndPoint>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&doam;Shannon">
+        <rdf:type rdf:resource="&doam;AbstractModel"/>
+        <creationDate rdf:datatype="&rdfs;Literal">2015-05-30</creationDate>
+        <description rdf:datatype="&xsd;string">The  Shannon Index is...</description>
+        <documentationURL 
+rdf:datatype="&xsd;anyURI">https://www.openrisk.eu/commons/risk_manual/Shannon_Index</documentationURL>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&doam;ConcentrationLib">
+        <rdf:type rdf:resource="&doam;ModelSourceCode"/>
+        <programmingLanguage rdf:datatype="&rdfs;Literal">Python</programmingLanguage>
+        <hasRepository rdf:resource="&doam;PythonConcentrationLib"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&doam;PythonConcentrationLib">
+        <rdf:type rdf:resource="&doam;GitBranch"/>
+	<repositoryURL rdf:datatype="&xsd;anyURI">https://github.com/open-risk/concentration_library</repositoryURL>
+    </owl:NamedIndividual>
+       
+    <owl:NamedIndividual rdf:about="&doam;FlaskApp">
+        <rdf:type rdf:resource="&doam;ModelInstance"/>
+        <serviceEndPoint rdf:datatype="&xsd;anyURI">http://localhost:8080/models/</serviceEndPoint>
+        <trainingURL rdf:datatype="&xsd;anyURI">http://localhost/training/</trainingURL>
+        <instanceType>Python Flask Server</instanceType>
+        <isImplementing rdf:resource="&doam;ConcentrationLib"/>
+        <isImplementing rdf:resource="&doam;CorrelationLib"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>

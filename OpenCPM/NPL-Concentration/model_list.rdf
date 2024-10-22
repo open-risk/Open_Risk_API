@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY doam "http://www.openriskplatform.org/ns/doam#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+<rdf:RDF xmlns="http://www.openriskplatform.org/ns/doam#"
+     xml:base="http://www.openriskplatform.org/ns/doam"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:doam="http://www.openriskplatform.org/ns/doam#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+    <owl:NamedIndividual rdf:about="&doam;HHI_Index">
+        <rdf:type rdf:resource="&doam;RiskModel"/>
+        <name rdf:datatype="&xsd;string">Herfindahl-Hirschman Index</name>
+        <description rdf:datatype="&xsd;string">Calculation of the HHI Concentration Index</description>
+	<serviceEndPoint rdf:datatype="&xsd;anyURI">http://localhost:8080/models/HHI_Index</serviceEndPoint>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&doam;Shannon_Index">
+        <rdf:type rdf:resource="&doam;RiskModel"/>
+        <name rdf:datatype="&xsd;string">Shannon Index</name>
+        <description rdf:datatype="&xsd;string">Calculation of the Shannon Concentration Index</description>		
+	<serviceEndPoint rdf:datatype="&xsd;anyURI">http://localhost:8080/models/Shannon_Index</serviceEndPoint>
+   </owl:NamedIndividual>   
+
+    <owl:NamedIndividual rdf:about="&doam;Concentration_Ratio">
+        <rdf:type rdf:resource="&doam;RiskModel"/>
+        <name rdf:datatype="&xsd;string">Concentration Ratio</name>
+        <description rdf:datatype="&xsd;string">Calculation of the Concentration Ratio</description>	
+	<serviceEndPoint rdf:datatype="&xsd;anyURI">http://localhost:8080/models/Concentration_Ratio</serviceEndPoint> 
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&doam;Hannah_Kay_Index">
+        <rdf:type rdf:resource="&doam;RiskModel"/>
+        <name rdf:datatype="&xsd;string">Hannah-Kay Index</name>
+        <description rdf:datatype="&xsd;string">Calculation of the Hannah-Kay Concentration Index</description>		
+	<serviceEndPoint rdf:datatype="&xsd;anyURI">http://localhost:8080/models/Hannah_Kay_Index</serviceEndPoint> 
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="&doam;Gini_Index">
+        <rdf:type rdf:resource="&doam;RiskModel"/>
+        <name rdf:datatype="&xsd;string">Gini Index</name>
+        <description rdf:datatype="&xsd;string">Calculation of the Gini Concentration Index</description>		
+	<serviceEndPoint rdf:datatype="&xsd;anyURI">http://localhost:8080/models/Gini_Index</serviceEndPoint> 
+    </owl:NamedIndividual>    
+
+
+</rdf:RDF>

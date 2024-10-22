@@ -1,0 +1,8 @@
+Flask
+Jinja2
+MarkupSafe
+numpy
+pandas
+rdflib
+rdflib-jsonld
+requests
