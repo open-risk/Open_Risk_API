@@ -1,4 +1,4 @@
-# (c) 2016 - 2023 Open Risk (https://www.openriskmanagement.com)
+# (c) 2016 - 2026 Open Risk (https://www.openriskmanagement.com)
 
 """
 Created on Fri Nov 18 14:24:07 CET 2016

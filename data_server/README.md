@@ -1,6 +1,7 @@
 ## API Demo (Data Server)
 
 The API Explorer is a python based client for exploring the Open Risk Models API.
+
 The assumption below is that you are using the client together with the other bundled servers without
 modifying any of the url data. 
 
@@ -48,6 +49,6 @@ The whole setup is captured by two files, the run.py and settings.py files
 
 - Simply run the data server script from the console (python run.py)
 - You can check the data server is live by pointing your browser to the port http://127.0.0.1:5011/
-- In the following URL  http://127.0.0.1:5011/obligors you should get an xml reply with some datasets
+- In the following URL  http://127.0.0.1:5011/obligors you should get a xml reply with some datasets
 - or by using curl from the console (curl -v http://127.0.0.1:5011/)
   

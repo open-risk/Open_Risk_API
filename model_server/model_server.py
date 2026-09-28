@@ -1,4 +1,4 @@
-# (c) 2015 - 2023 Open Risk (https://www.openriskmanagement.com)
+# (c) 2015 - 2026 Open Risk (https://www.openriskmanagement.com)
 """
 @author: open risk
 Purpose: Demonstration of Open Risk Model API compliant model server
